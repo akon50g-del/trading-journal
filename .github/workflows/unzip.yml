@@ -4,6 +4,8 @@ on:
 jobs:
   unzip:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Unzip and commit extracted files
@@ -11,6 +13,10 @@ jobs:
           unzip -o TradingJournal-Android-v1.zip
           cp -a android-trading-journal/. .
           rm -rf android-trading-journal TradingJournal-Android-v1.zip
+          echo "=== build-apk.yml ==="
+          cat .github/workflows/build-apk.yml
+          echo "=== end build-apk.yml ==="
+          rm .github/workflows/build-apk.yml
           git config user.name "muse-bot"
           git config user.email "muse-bot@users.noreply.github.com"
           git add -A
