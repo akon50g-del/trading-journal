@@ -1,5 +1,6 @@
 package com.abdo.tradingjournal.ui.journal
 
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -8,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.abdo.tradingjournal.domain.model.*
+
 
 /**
  * سجل التداول المتطور:
@@ -22,8 +24,8 @@ fun JournalScreen() {
     var filter by remember { mutableStateOf("الكل") }
     val sample = remember {
         listOf(
-            Trade(symbol = "DOGEUSDT.P", direction = Direction.LONG, entry = 0.169175, stopLoss = 0.16240636, takeProfit2 = 0.24203, quantity = 5000.0, riskAmountUsd = 12.5, setup = "FVG + BOS", status = TradeStatus.OPEN),
-            Trade(symbol = "BTCUSDT.P", direction = Direction.LONG, entry = 67774.8, stopLoss = 64642.68, takeProfit2 = 107473.7, quantity = 0.02, riskAmountUsd = 12.5, setup = "OB", status = TradeStatus.CLOSED, result = TradeResult.WIN, pnlUsd = 42.5, pnlR = 3.4)
+            Trade(userId = "demo", symbol = "DOGEUSDT.P", direction = Direction.LONG, entry = 0.169175, stopLoss = 0.16240636, takeProfit2 = 0.24203, quantity = 5000.0, riskAmountUsd = 12.5, setup = "FVG + BOS", status = TradeStatus.OPEN),
+            Trade(userId = "demo", symbol = "BTCUSDT.P", direction = Direction.LONG, entry = 67774.8, stopLoss = 64642.68, takeProfit2 = 107473.7, quantity = 0.02, riskAmountUsd = 12.5, setup = "OB", status = TradeStatus.CLOSED, result = TradeResult.WIN, pnlUsd = 42.5, pnlR = 3.4)
         )
     }
     Column(Modifier.fillMaxSize().padding(16.dp)) {
@@ -52,3 +54,4 @@ fun JournalScreen() {
         Button(onClick = { /* AddTradeDialog */ }, modifier = Modifier.fillMaxWidth()) { Text("+ إضافة صفقة جديدة") }
     }
 }
+
