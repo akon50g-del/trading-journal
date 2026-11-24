@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.TradingJournal" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/navy</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:navigationBarColor">@color/navy</item>
+    </style>
+    <style name="Theme.TradingJournal.Splash" parent="Theme.TradingJournal">
+        <item name="android:windowSplashScreenBackground">@color/navy</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="android:windowSplashScreenAnimationDuration">1200</item>
+    </style>
+</resources>

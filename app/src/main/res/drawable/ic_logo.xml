@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo احترافي: حرف A على شكل شمعة صاعدة + سهم — Vector Drawable -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="120" android:viewportHeight="120">
+    <!-- خلفية دائرية متدرجة (كحلي) -->
+    <path android:fillColor="#0B0E11"
+        android:pathData="M60,4 A56,56 0 1,1 60,116 A56,56 0 1,1 60,4 Z"/>
+    <path android:fillColor="#F0B90B" android:strokeColor="#F0B90B" android:strokeWidth="2"
+        android:pathData="M38,88 L52,58 L60,70 L68,52 L82,88 Z"/>
+    <!-- شموع صاعدة -->
+    <path android:fillColor="#0ECB81" android:pathData="M30,78 h6 v14 h-6 Z M84,62 h6 v26 h-6 Z"/>
+    <path android:fillColor="#F0B90B" android:pathData="M60,24 L60,40 M60,88 L60,96"/>
+</vector>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">سجل التداول | Trading Journal</string>
+    <string name="tagline">تدرّب بذكاء — حلّل، خاطِر، واكسب</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="assistant">المساعد الشخصي</string>
+    <string name="wallet">المحفظة</string>
+    <string name="journal">سجل التداول</string>
+    <string name="calculator">حاسبة المخاطر</string>
+    <string name="dashboard">لوحة التحكم</string>
+</resources>
